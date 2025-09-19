@@ -32,7 +32,7 @@ const Contact = () => {
             </CardHeader>
             <CardContent>
               <form className="space-y-6">
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   <div>
                     <Label htmlFor="name">Full Name *</Label>
                     <Input id="name" placeholder="Your full name" className="mt-1" />
@@ -43,7 +43,7 @@ const Contact = () => {
                   </div>
                 </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   <div>
                     <Label htmlFor="phone">Phone Number *</Label>
                     <Input id="phone" placeholder="+91 XXXXX XXXXX" className="mt-1" />
@@ -54,7 +54,7 @@ const Contact = () => {
                   </div>
                 </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   <div>
                     <Label htmlFor="city">City</Label>
                     <Input id="city" placeholder="Your city" className="mt-1" />
@@ -77,7 +77,7 @@ const Contact = () => {
                   </div>
                 </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   <div>
                     <Label htmlFor="capacity">Capacity/Persons</Label>
                     <Input id="capacity" placeholder="e.g., 8 persons" className="mt-1" />

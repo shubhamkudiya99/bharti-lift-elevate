@@ -110,22 +110,26 @@ const Projects = () => {
               <CardContent>
                 <div className="space-y-4">
                   {/* Project Details */}
-                  <div className="grid grid-cols-2 gap-4 text-sm">
-                    <div>
-                      <p className="text-muted-foreground">Type</p>
-                      <p className="font-medium">{project.type}</p>
+                  <div className="space-y-3 text-sm">
+                    <div className="grid grid-cols-2 gap-2">
+                      <div>
+                        <p className="text-muted-foreground text-xs">Type</p>
+                        <p className="font-medium text-sm">{project.type}</p>
+                      </div>
+                      <div>
+                        <p className="text-muted-foreground text-xs">Capacity</p>
+                        <p className="font-medium text-sm">{project.capacity}</p>
+                      </div>
                     </div>
-                    <div>
-                      <p className="text-muted-foreground">Capacity</p>
-                      <p className="font-medium">{project.capacity}</p>
-                    </div>
-                    <div>
-                      <p className="text-muted-foreground">Speed</p>
-                      <p className="font-medium">{project.speed}</p>
-                    </div>
-                    <div className="flex items-center space-x-1">
-                      <Users className="h-4 w-4 text-muted-foreground" />
-                      <Zap className="h-4 w-4 text-muted-foreground" />
+                    <div className="grid grid-cols-2 gap-2">
+                      <div>
+                        <p className="text-muted-foreground text-xs">Speed</p>
+                        <p className="font-medium text-sm">{project.speed}</p>
+                      </div>
+                      <div className="flex items-center space-x-1">
+                        <Users className="h-3 w-3 text-muted-foreground" />
+                        <Zap className="h-3 w-3 text-muted-foreground" />
+                      </div>
                     </div>
                   </div>
 

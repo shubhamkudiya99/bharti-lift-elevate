@@ -47,37 +47,39 @@ const Products = () => {
                 </div>
                 <div>
                   <h3 className="text-xl font-semibold mb-4">Specifications</h3>
-                  <Table>
-                    <TableHeader>
-                      <TableRow>
-                        <TableHead>Capacity</TableHead>
-                        <TableHead>Car Size (mm)</TableHead>
-                        <TableHead>Entrance (mm)</TableHead>
-                      </TableRow>
-                    </TableHeader>
-                    <TableBody>
-                      <TableRow>
-                        <TableCell>6 persons</TableCell>
-                        <TableCell>1100×1400</TableCell>
-                        <TableCell>800×2100</TableCell>
-                      </TableRow>
-                      <TableRow>
-                        <TableCell>8 persons</TableCell>
-                        <TableCell>1350×1400</TableCell>
-                        <TableCell>900×2100</TableCell>
-                      </TableRow>
-                      <TableRow>
-                        <TableCell>10 persons</TableCell>
-                        <TableCell>1600×1400</TableCell>
-                        <TableCell>900×2100</TableCell>
-                      </TableRow>
-                      <TableRow>
-                        <TableCell>13 persons</TableCell>
-                        <TableCell>1350×1600</TableCell>
-                        <TableCell>900×2100</TableCell>
-                      </TableRow>
-                    </TableBody>
-                  </Table>
+                  <div className="overflow-x-auto">
+                    <Table>
+                      <TableHeader>
+                        <TableRow>
+                          <TableHead className="min-w-[80px]">Capacity</TableHead>
+                          <TableHead className="min-w-[100px]">Car Size (mm)</TableHead>
+                          <TableHead className="min-w-[100px]">Entrance (mm)</TableHead>
+                        </TableRow>
+                      </TableHeader>
+                      <TableBody>
+                        <TableRow>
+                          <TableCell className="text-xs sm:text-sm">6 persons</TableCell>
+                          <TableCell className="text-xs sm:text-sm">1100×1400</TableCell>
+                          <TableCell className="text-xs sm:text-sm">800×2100</TableCell>
+                        </TableRow>
+                        <TableRow>
+                          <TableCell className="text-xs sm:text-sm">8 persons</TableCell>
+                          <TableCell className="text-xs sm:text-sm">1350×1400</TableCell>
+                          <TableCell className="text-xs sm:text-sm">900×2100</TableCell>
+                        </TableRow>
+                        <TableRow>
+                          <TableCell className="text-xs sm:text-sm">10 persons</TableCell>
+                          <TableCell className="text-xs sm:text-sm">1600×1400</TableCell>
+                          <TableCell className="text-xs sm:text-sm">900×2100</TableCell>
+                        </TableRow>
+                        <TableRow>
+                          <TableCell className="text-xs sm:text-sm">13 persons</TableCell>
+                          <TableCell className="text-xs sm:text-sm">1350×1600</TableCell>
+                          <TableCell className="text-xs sm:text-sm">900×2100</TableCell>
+                        </TableRow>
+                      </TableBody>
+                    </Table>
+                  </div>
                 </div>
               </div>
             </CardContent>
@@ -165,32 +167,34 @@ const Products = () => {
                 </div>
                 <div>
                   <h3 className="text-xl font-semibold mb-4">Hospital Lift Specifications</h3>
-                  <Table>
-                    <TableHeader>
-                      <TableRow>
-                        <TableHead>Capacity</TableHead>
-                        <TableHead>Car Size (mm)</TableHead>
-                        <TableHead>Entrance (mm)</TableHead>
-                      </TableRow>
-                    </TableHeader>
-                    <TableBody>
-                      <TableRow>
-                        <TableCell>15 persons</TableCell>
-                        <TableCell>1000×2400</TableCell>
-                        <TableCell>800×2100</TableCell>
-                      </TableRow>
-                      <TableRow>
-                        <TableCell>20 persons</TableCell>
-                        <TableCell>1200×2400</TableCell>
-                        <TableCell>900×2100</TableCell>
-                      </TableRow>
-                      <TableRow>
-                        <TableCell>26 persons</TableCell>
-                        <TableCell>1600×2400</TableCell>
-                        <TableCell>1200×2100</TableCell>
-                      </TableRow>
-                    </TableBody>
-                  </Table>
+                  <div className="overflow-x-auto">
+                    <Table>
+                      <TableHeader>
+                        <TableRow>
+                          <TableHead className="min-w-[80px]">Capacity</TableHead>
+                          <TableHead className="min-w-[100px]">Car Size (mm)</TableHead>
+                          <TableHead className="min-w-[100px]">Entrance (mm)</TableHead>
+                        </TableRow>
+                      </TableHeader>
+                      <TableBody>
+                        <TableRow>
+                          <TableCell className="text-xs sm:text-sm">15 persons</TableCell>
+                          <TableCell className="text-xs sm:text-sm">1000×2400</TableCell>
+                          <TableCell className="text-xs sm:text-sm">800×2100</TableCell>
+                        </TableRow>
+                        <TableRow>
+                          <TableCell className="text-xs sm:text-sm">20 persons</TableCell>
+                          <TableCell className="text-xs sm:text-sm">1200×2400</TableCell>
+                          <TableCell className="text-xs sm:text-sm">900×2100</TableCell>
+                        </TableRow>
+                        <TableRow>
+                          <TableCell className="text-xs sm:text-sm">26 persons</TableCell>
+                          <TableCell className="text-xs sm:text-sm">1600×2400</TableCell>
+                          <TableCell className="text-xs sm:text-sm">1200×2100</TableCell>
+                        </TableRow>
+                      </TableBody>
+                    </Table>
+                  </div>
                 </div>
               </div>
             </CardContent>

@@ -194,17 +194,17 @@ export const Layout = ({ children }: LayoutProps) => {
       </footer>
 
       {/* Floating Action Buttons */}
-      <div className="fixed bottom-6 right-6 z-50 flex flex-col space-y-3">
+      <div className="fixed bottom-4 right-4 z-50 flex flex-col space-y-2">
         <PhoneButton
           number="+919990917708"
-          className="bg-primary hover:bg-primary-hover text-primary-foreground p-3 rounded-full shadow-elevator transition-colors"
+          className="bg-primary hover:bg-primary-hover text-primary-foreground p-2.5 sm:p-3 rounded-full shadow-elevator transition-colors"
         >
-          <Phone className="h-5 w-5" />
+          <Phone className="h-4 w-4 sm:h-5 sm:w-5" />
         </PhoneButton>
         <Button
           variant="primary"
           size="sm"
-          className="shadow-elevator"
+          className="shadow-elevator text-xs sm:text-sm px-3 sm:px-4"
         >
           Get Quote
         </Button>
