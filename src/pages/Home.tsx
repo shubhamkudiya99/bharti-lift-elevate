@@ -81,7 +81,7 @@ const Home = () => {
         
         <div className="relative z-10 container mx-auto px-4 text-center text-white">
           <h1 className="text-5xl md:text-7xl font-bold mb-6 tracking-tight">
-            Elevator Complete Solutions
+            Bharti Elevator
           </h1>
           <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto leading-relaxed">
             Passenger, capsule, hospital and dumbwaiter lifts engineered for safety, comfort, and efficiency.
