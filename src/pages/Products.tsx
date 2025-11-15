@@ -3,6 +3,10 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 import { Users, Building, Hospital, Truck, ArrowRight } from "lucide-react";
+import passengerLiftImg from "@/assets/passenger-lift.png";
+import capsuleLiftImg from "@/assets/Capsule-lift.png";
+import hospitalLiftImg from "@/assets/hospital-elevator.png";
+import dumbwaiterImg from "@/assets/dumbwaiter.png";
 
 const Products = () => {
   return (
@@ -32,9 +36,19 @@ const Products = () => {
                 </div>
               </div>
             </CardHeader>
+
             <CardContent className="p-6">
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+
+                {/* IMAGE SECTION */}
                 <div>
+                  <img
+                    src={passengerLiftImg}
+                    alt="Passenger Lift"
+                    className="w-full h-64 object-cover rounded-xl shadow-lg mb-6"
+                  />
+
+
                   <h3 className="text-xl font-semibold mb-4">Key Features</h3>
                   <ul className="space-y-2 text-muted-foreground">
                     <li>• Capacities: 4–20 persons (272–1360 kg)</li>
@@ -45,6 +59,8 @@ const Products = () => {
                     <li>• Energy-efficient MRL options</li>
                   </ul>
                 </div>
+
+                {/* SPECIFICATIONS TABLE */}
                 <div>
                   <h3 className="text-xl font-semibold mb-4">Specifications</h3>
                   <div className="overflow-x-auto">
@@ -86,6 +102,7 @@ const Products = () => {
           </Card>
         </section>
 
+
         {/* Capsule Lifts */}
         <section id="capsule" className="mb-16">
           <Card className="overflow-hidden">
@@ -103,6 +120,11 @@ const Products = () => {
             <CardContent className="p-6">
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
                 <div>
+                  <img
+                    src={capsuleLiftImg}
+                    alt="Passenger Lift"
+                    className="w-full h-64 object-cover rounded-xl shadow-lg mb-6"
+                  />
                   <h3 className="text-xl font-semibold mb-4">Key Features</h3>
                   <ul className="space-y-2 text-muted-foreground">
                     <li>• Capacities: 6–15 persons</li>
@@ -155,6 +177,11 @@ const Products = () => {
             <CardContent className="p-6">
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
                 <div>
+                  <img
+                    src={hospitalLiftImg}
+                    alt="Passenger Lift"
+                    className="w-full h-64 object-cover rounded-xl shadow-lg mb-6"
+                  />
                   <h3 className="text-xl font-semibold mb-4">Key Features</h3>
                   <ul className="space-y-2 text-muted-foreground">
                     <li>• Capacities: 15–26 persons</li>
@@ -218,6 +245,11 @@ const Products = () => {
             <CardContent className="p-6">
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
                 <div>
+                  <img
+                    src={dumbwaiterImg}
+                    alt="Passenger Lift"
+                    className="w-full h-64 object-cover rounded-xl shadow-lg mb-6"
+                  />
                   <h3 className="text-xl font-semibold mb-4">Key Features</h3>
                   <ul className="space-y-2 text-muted-foreground">
                     <li>• Load capacity: 100–250 kg (50 kg increments)</li>
