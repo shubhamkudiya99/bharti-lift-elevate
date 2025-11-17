@@ -3,6 +3,7 @@ import { Link, useLocation } from "react-router-dom";
 import { Menu, X, Phone, Mail } from "lucide-react";
 import { Button } from "./ui/button";
 import { PhoneButton } from "./ui/phone";
+import beLogoImage from "../assets/bharti-elevator-logo.png";
 
 const navigation = [
   { name: "Home", href: "/" },
@@ -30,9 +31,7 @@ export const Layout = ({ children }: LayoutProps) => {
           <div className="flex items-center justify-between h-16">
             {/* Logo */}
             <Link to="/" className="flex items-center space-x-2">
-              <div className="w-8 h-8 bg-gradient-primary rounded flex items-center justify-center">
-                <span className="text-primary-foreground font-bold text-sm">BE</span>
-              </div>
+              <img src={beLogoImage} alt="Bharti Elevator Logo" className="w-8 h-8 rounded" />
               <div>
                 <div className="font-bold text-foreground">Bharti Elevator</div>
                 <div className="text-xs text-muted-foreground">Complete Solutions</div>
@@ -124,13 +123,13 @@ export const Layout = ({ children }: LayoutProps) => {
             {/* Company Info */}
             <div>
               <div className="flex items-center space-x-2 mb-4">
-                <div className="w-8 h-8 bg-gradient-primary rounded flex items-center justify-center">
-                  <span className="text-primary-foreground font-bold text-sm">BE</span>
-                </div>
-                <div>
-                  <div className="font-bold text-foreground">Bharti Elevator</div>
-                  <div className="text-xs text-muted-foreground">Complete Solutions</div>
-                </div>
+                <Link to="/" className="flex items-center space-x-2">
+                  <img src={beLogoImage} alt="Bharti Elevator Logo" className="w-8 h-8 rounded" />
+                  <div>
+                    <div className="font-bold text-foreground">Bharti Elevator</div>
+                    <div className="text-xs text-muted-foreground">Complete Solutions</div>
+                  </div>
+                </Link>
               </div>
               <p className="text-sm text-muted-foreground mb-4">
                 Service Satisfaction Guaranteed
