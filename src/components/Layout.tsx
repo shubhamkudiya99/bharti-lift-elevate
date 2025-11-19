@@ -160,7 +160,7 @@ export const Layout = ({ children }: LayoutProps) => {
             <div>
               <h3 className="font-semibold text-foreground mb-4">Dehradun Office</h3>
               <div className="space-y-2 text-sm text-muted-foreground">
-                <p>Blinkit Market, Canal Road, Dehradun</p>
+                <p>Blinkit Market, Canal Road, Dehradun, Himachal Pradesh, Punjab, Amritsar, Bhatinda</p>
                 <PhoneButton number="+919990917708" className="block hover:text-primary transition-colors">
                   +91 9990917708
                 </PhoneButton>
@@ -171,7 +171,7 @@ export const Layout = ({ children }: LayoutProps) => {
             <div>
               <h3 className="font-semibold text-foreground mb-4">Delhi Office</h3>
               <div className="space-y-2 text-sm text-muted-foreground">
-                <p>Plot No. 50, Khasra No. 44/11, Nangloi, Village Safipur Ranhola, Nathan Vihar, New Delhi 110041</p>
+                <p>PAN India, Plot No. 50, Khasra No. 44/11, Nangloi, Village Safipur Ranhola, Nathan Vihar, New Delhi 110041</p>
                 <PhoneButton number="+919667007059" className="block hover:text-primary transition-colors">
                   +91 9667007059
                 </PhoneButton>

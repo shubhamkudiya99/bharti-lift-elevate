@@ -146,7 +146,7 @@ const About = () => {
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground mb-4">
-                  Blinkit Market, Canal Road, Dehradun
+                  Blinkit Market, Canal Road, Dehradun, Himachal Pradesh, Punjab, Amritsar, Bhatinda
                 </p>
                 <PhoneButton 
                   number="+919990917708"
@@ -172,7 +172,7 @@ const About = () => {
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground mb-4">
-                  Plot No. 50, Khasra No. 44/11, Nangloi, Village Safipur Ranhola, Nathan Vihar, New Delhi 110041
+                  PAN India, Plot No. 50, Khasra No. 44/11, Nangloi, Village Safipur Ranhola, Nathan Vihar, New Delhi 110041
                 </p>
                 <PhoneButton 
                   number="+919667007059"
