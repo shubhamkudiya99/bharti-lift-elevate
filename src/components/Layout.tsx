@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X, Phone, Mail } from "lucide-react";
 import { Button } from "./ui/button";
@@ -26,6 +26,10 @@ interface LayoutProps {
 export const Layout = ({ children }: LayoutProps) => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const location = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location.pathname]);
 
   return (
     <div className="min-h-screen bg-background">
@@ -217,12 +221,12 @@ export const Layout = ({ children }: LayoutProps) => {
 
       {/* Floating Action Buttons */}
       <div className="fixed bottom-4 right-4 z-50 flex flex-col space-y-2">
-        <PhoneButton
-          number="+919990917708"
-          className="bg-primary hover:bg-primary-hover text-primary-foreground p-2.5 sm:p-3 rounded-full shadow-elevator transition-colors"
+        <a
+          href="tel:+919990917708"
+          className="bg-primary hover:bg-primary-hover text-primary-foreground p-2.5 sm:p-3 rounded-full shadow-elevator transition-colors inline-flex items-center justify-center"
         >
-          <Phone className="h-4 w-4 sm:h-5 sm:w-5" />
-        </PhoneButton>
+          <Phone className="h-5 w-5 sm:h-6 sm:w-6" />
+        </a>
         <Button
           variant="primary"
           size="sm"

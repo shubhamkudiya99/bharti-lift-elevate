@@ -95,8 +95,7 @@ const OurTeam = () => {
             number="+919990917708"
             className="bg-gradient-primary text-primary-foreground px-6 py-3 rounded-md inline-flex items-center gap-2"
           >
-            <Phone className="h-4 w-4" />
-            <span>Contact Us</span>
+            Contact Us
           </PhoneButton>
         </div>
       </div>

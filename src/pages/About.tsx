@@ -255,8 +255,7 @@ const About = () => {
               number="+919990917708"
               className="bg-white text-primary hover:bg-steel-light transition-colors px-8 py-4 rounded-md font-semibold flex items-center space-x-2"
             >
-              <Phone className="h-5 w-5" />
-              <span>Call Now</span>
+              Call Now
             </PhoneButton>
             <Button variant="outline" size="lg" className="bg-white/10 border-white text-white hover:bg-white hover:text-primary">
               Get Quote
