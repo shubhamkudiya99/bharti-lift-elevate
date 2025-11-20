@@ -1,7 +1,7 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { Shield, Award, Users, Wrench, Phone, ArrowRight } from "lucide-react";
+import { Shield, Award, Users, Wrench, Phone, ArrowRight, Mail } from "lucide-react";
 import { PhoneButton } from "@/components/ui/phone";
 
 const About = () => {
@@ -154,6 +154,10 @@ const About = () => {
                 >
                   +91 9990917708
                 </PhoneButton>
+                <a href="mailto:bhartielevator1@gmail.com" className="flex items-center gap-2 hover:text-primary transition-colors">
+                  <Mail className="h-4 w-4" />
+                  bhartielevator1@gmail.com
+                </a>
                 <div className="mt-4">
                   <p className="text-sm font-medium text-foreground">Coverage Areas:</p>
                   <p className="text-sm text-muted-foreground">
@@ -175,11 +179,15 @@ const About = () => {
                   PAN India, Plot No. 50, Khasra No. 44/11, Nangloi, Village Safipur Ranhola, Nathan Vihar, New Delhi 110041
                 </p>
                 <PhoneButton 
-                  number="+919667007059"
+                  number="+918076390964"
                   className="flex items-center space-x-2 text-primary hover:text-primary-hover transition-colors"
                 >
-                  +91 9667007059
+                  +91 8076390964
                 </PhoneButton>
+                <a href="mailto:elevatorbharti@gmail.com" className="flex items-center gap-2 hover:text-primary transition-colors">
+                  <Mail className="h-4 w-4" />
+                  elevatorbharti@gmail.com
+                </a>
                 <div className="mt-4">
                   <p className="text-sm font-medium text-foreground">Coverage Areas:</p>
                   <p className="text-sm text-muted-foreground">

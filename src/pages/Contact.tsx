@@ -167,6 +167,10 @@ const Contact = () => {
                   >
                     +91 9990917708
                   </PhoneButton>
+                  <a href="mailto:bhartielevator1@gmail.com" className="flex items-center gap-2 hover:text-primary transition-colors">
+                    <Mail className="h-4 w-4" />
+                    bhartielevator1@gmail.com
+                  </a>
                   <div className="flex space-x-2">
                     <Button variant="primary" size="sm" className="flex-1">
                       <Phone className="h-4 w-4 mr-2" />
@@ -195,17 +199,17 @@ const Contact = () => {
                 </p>
                 <div className="space-y-2">
                   <PhoneButton 
-                    number="+919667007059"
+                    number="+918076390964"
                     className="flex items-center space-x-2 text-primary hover:text-primary-hover transition-colors"
                   >
-                    +91 9667007059
+                    +91 8076390964
                   </PhoneButton>
                   <a 
                     href="mailto:bhartielevator1@gmail.com"
                     className="flex items-center space-x-2 text-primary hover:text-primary-hover transition-colors"
                   >
                     <Mail className="h-4 w-4" />
-                    bhartielevator1@gmail.com
+                    elevatorbharti@gmail.com
                   </a>
                   <div className="flex space-x-2">
                     <Button variant="primary" size="sm" className="flex-1">
