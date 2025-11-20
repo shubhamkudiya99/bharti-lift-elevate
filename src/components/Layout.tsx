@@ -4,6 +4,9 @@ import { Menu, X, Phone, Mail } from "lucide-react";
 import { Button } from "./ui/button";
 import { PhoneButton } from "./ui/phone";
 import beLogoImage from "../assets/bharti-elevator-logo.png";
+import isoLogo from "../assets/iso.jpeg";
+import guaranteeLogo from "../assets/guarantee.jpeg";
+import googleCertLogo from "../assets/google_cert.jpeg";
 
 const navigation = [
   { name: "Home", href: "/" },
@@ -215,6 +218,19 @@ export const Layout = ({ children }: LayoutProps) => {
         >
           Get Quote
         </Button>
+      </div>
+
+      {/* Bottom-left logos (fixed) */}
+      <div className="fixed bottom-6 left-4 z-40 flex flex-col items-start gap-2">
+        <div className="bg-white/80 p-1 rounded-2xl shadow-sm overflow-hidden">
+          <img src={isoLogo} alt="ISO Certified" className="h-10 w-10 object-contain rounded-2xl" />
+        </div>
+        <div className="bg-white/80 p-1 rounded-2xl shadow-sm overflow-hidden">
+          <img src={guaranteeLogo} alt="100% Guarantee" className="h-10 w-10 object-contain rounded-2xl" />
+        </div>
+        <div className="bg-white/80 p-1 rounded-2xl shadow-sm overflow-hidden">
+          <img src={googleCertLogo} alt="Google Certified" className="h-10 w-10 object-contain rounded-2xl" />
+        </div>
       </div>
     </div>
   );

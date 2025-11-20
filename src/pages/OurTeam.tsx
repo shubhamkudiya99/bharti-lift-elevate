@@ -4,6 +4,7 @@ import { Phone } from "lucide-react";
 import { PhoneButton } from "@/components/ui/phone";
 import SunilImage from "../assets/sunil.jpeg";
 import ManishImage from "../assets/manish.jpeg";
+import SushilImage from "../assets/sushil.jpeg";
 
 const OurTeam = () => {
   return (
@@ -16,18 +17,18 @@ const OurTeam = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
           <Card>
             <CardHeader>
               <div className="flex items-center space-x-4">
                 <img src={SunilImage} alt="Sunil Paliwal" className="w-24 h-24 rounded-md" />
-                <CardTitle className="text-2xl">Director - ER. Sunil Paliwal</CardTitle>
+                <CardTitle className="text-2xl">Director/CEO - ER. Sunil Paliwal</CardTitle>
               </div>
             </CardHeader>
             <CardContent>
               <p className="text-sm text-muted-foreground mb-4">ER. Sunil Paliwal is the backbone of Bharti Elevators.</p>
               <p className="text-sm text-muted-foreground mb-4">
-                With over 15+ years of technical and management experience, he leads the company with a strong
+                With over 25+ years of technical and management experience, he leads the company with a strong
                 focus on Quality, Safety, and Customer Satisfaction.
               </p>
 
@@ -62,6 +63,29 @@ const OurTeam = () => {
                   and business. We believe every customer is family, and their comfort and safety come first.”
                 </p>
               </div>
+            </CardContent>
+          </Card>
+
+          <Card>
+            <CardHeader>
+              <div className="flex items-center space-x-4">
+                <img src={SushilImage} alt="ER. Sushil Paliwal" className="w-24 h-24 rounded-md" />
+                <CardTitle className="text-2xl">Marketing Head – ER. Sushil Paliwal</CardTitle>
+              </div>
+            </CardHeader>
+            <CardContent>
+              <p className="text-sm text-muted-foreground mb-4">ER. Sushil Paliwal — Marketing Head</p>
+              <p className="text-sm text-muted-foreground mb-4">
+                As the Marketing Head with 15+ years of experience, he brings sharp business insight, strong communication skills, and a deep
+                understanding of customer needs. His approach blends data-driven planning with creative execution,
+                ensuring that every campaign delivers real results.
+              </p>
+
+              <p className="text-sm text-muted-foreground mb-4">
+                He is known for being hardworking, dedicated, and highly disciplined, leading the marketing team with
+                clarity and motivation. His ability to understand the market, build trust with clients, and create
+                impactful branding makes him a key pillar of Bharti Elevators.
+              </p>
             </CardContent>
           </Card>
         </div>
