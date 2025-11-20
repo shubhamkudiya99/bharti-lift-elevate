@@ -195,6 +195,18 @@ export const Layout = ({ children }: LayoutProps) => {
           </div>
 
           <div className="border-t mt-8 pt-8">
+            <div className="flex justify-center items-center gap-4 mb-4">
+              <div className="bg-white/80 p-1 shadow-sm overflow-hidden">
+                <img src={isoLogo} alt="ISO Certified" className="h-10 w-10 object-contain rounded-2xl" />
+              </div>
+              <div className="bg-white/80 p-1 shadow-sm overflow-hidden">
+                <img src={guaranteeLogo} alt="100% Guarantee" className="h-10 w-10 object-contain rounded-2xl" />
+              </div>
+              <div className="bg-white/80 p-1 shadow-sm overflow-hidden">
+                <img src={googleCertLogo} alt="Google Certified" className="h-10 w-10 object-contain rounded-2xl" />
+              </div>
+            </div>
+
             <div className="text-center text-sm text-muted-foreground">
               <p>© 2024 Bharti Elevator. All rights reserved.</p>
               <p className="mt-2">All dimensions are approximate and may vary by site conditions; as per relevant IS code.</p>
@@ -220,18 +232,7 @@ export const Layout = ({ children }: LayoutProps) => {
         </Button>
       </div>
 
-      {/* Bottom-left logos (fixed) */}
-      <div className="fixed bottom-6 left-4 z-40 flex flex-col items-start gap-2">
-        <div className="bg-white/80 p-1 rounded-2xl shadow-sm overflow-hidden">
-          <img src={isoLogo} alt="ISO Certified" className="h-10 w-10 object-contain rounded-2xl" />
-        </div>
-        <div className="bg-white/80 p-1 rounded-2xl shadow-sm overflow-hidden">
-          <img src={guaranteeLogo} alt="100% Guarantee" className="h-10 w-10 object-contain rounded-2xl" />
-        </div>
-        <div className="bg-white/80 p-1 rounded-2xl shadow-sm overflow-hidden">
-          <img src={googleCertLogo} alt="Google Certified" className="h-10 w-10 object-contain rounded-2xl" />
-        </div>
-      </div>
+      
     </div>
   );
 };
