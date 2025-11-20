@@ -2,11 +2,13 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
-import { Users, Building, Hospital, Truck, ArrowRight } from "lucide-react";
+import { Users, Building, Hospital, Truck, ArrowRight, Wrench } from "lucide-react";
 import passengerLiftImg from "@/assets/passenger-lift.png";
 import capsuleLiftImg from "@/assets/Capsule-lift.png";
 import hospitalLiftImg from "@/assets/hospital-elevator.png";
 import dumbwaiterImg from "@/assets/dumbwaiter.png";
+import goodsLiftImg from "@/assets/goods-lift.jpeg";
+import hydraulicLiftImg from "@/assets/hydraulic-lift.jpeg";
 
 const Products = () => {
   return (
@@ -275,6 +277,192 @@ const Products = () => {
                       <h4 className="font-medium">Controls</h4>
                       <p className="text-sm text-muted-foreground">24V with indicators and buzzer</p>
                     </div>
+                  </div>
+                </div>
+              </div>
+            </CardContent>
+          </Card>
+        </section>
+
+        {/* Hydraulic Lifts */}
+        <section id="hydraulic" className="mb-16">
+          <Card className="overflow-hidden">
+            <CardHeader className="bg-gradient-primary text-primary-foreground">
+              <div className="flex items-center space-x-3">
+                <Wrench className="h-8 w-8" />
+                <div>
+                  <CardTitle className="text-2xl">Hydraulic Lifts</CardTitle>
+                  <CardDescription className="text-primary-foreground/90">
+                    Smooth, Safe & Cost-Effective Vertical Mobility
+                  </CardDescription>
+                </div>
+              </div>
+            </CardHeader>
+            <CardContent className="p-6">
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                <div>
+                  <img
+                    src={hydraulicLiftImg}
+                    alt="Hydraulic Lift"
+                    className="w-full h-64 object-cover rounded-xl shadow-lg mb-6"
+                  />
+                  <h3 className="text-xl font-semibold mb-4">Key Features</h3>
+                  <ul className="space-y-2 text-muted-foreground">
+                    <li>• Capacity Range: 320 kg – 1600 kg</li>
+                    <li>• Ideal for low-rise buildings (G+4 / G+5)</li>
+                    <li>• Smooth, silent & vibration-free operation</li>
+                    <li>• No overhead machine room required</li>
+                    <li>• Low pit depth suitable for homes & renovations</li>
+                    <li>• Cost-effective installation & maintenance</li>
+                    <li>• Perfect for residential, commercial & private villas</li>
+                    <li>• Emergency manual lowering system</li>
+                    <li>• Energy-efficient hydraulic power unit options</li>
+                  </ul>
+
+                  <h3 className="text-xl font-semibold mt-6 mb-3">Advantages</h3>
+                  <ul className="space-y-2 text-muted-foreground">
+                    <li>✔ Best for homes, offices & low-rise buildings</li>
+                    <li>✔ Works where pit & overhead space is limited</li>
+                    <li>✔ Budget-friendly installation & service</li>
+                    <li>✔ Reliable, silent & safe movement</li>
+                  </ul>
+                </div>
+
+                <div>
+                  <h3 className="text-xl font-semibold mb-4">Typical Capacity & Dimensions</h3>
+                  <div className="overflow-x-auto">
+                    <Table>
+                      <TableHeader>
+                        <TableRow>
+                          <TableHead className="min-w-[120px]">Capacity (kg)</TableHead>
+                          <TableHead className="min-w-[140px]">Car Size (mm)</TableHead>
+                          <TableHead className="min-w-[140px]">Entrance (mm)</TableHead>
+                        </TableRow>
+                      </TableHeader>
+                      <TableBody>
+                        <TableRow>
+                          <TableCell className="text-xs sm:text-sm">320 kg</TableCell>
+                          <TableCell className="text-xs sm:text-sm">900 × 1100</TableCell>
+                          <TableCell className="text-xs sm:text-sm">700 × 2000</TableCell>
+                        </TableRow>
+                        <TableRow>
+                          <TableCell className="text-xs sm:text-sm">450 kg</TableCell>
+                          <TableCell className="text-xs sm:text-sm">1000 × 1200</TableCell>
+                          <TableCell className="text-xs sm:text-sm">800 × 2000</TableCell>
+                        </TableRow>
+                        <TableRow>
+                          <TableCell className="text-xs sm:text-sm">630 kg</TableCell>
+                          <TableCell className="text-xs sm:text-sm">1100 × 1400</TableCell>
+                          <TableCell className="text-xs sm:text-sm">800 × 2100</TableCell>
+                        </TableRow>
+                        <TableRow>
+                          <TableCell className="text-xs sm:text-sm">800 kg</TableCell>
+                          <TableCell className="text-xs sm:text-sm">1350 × 1400</TableCell>
+                          <TableCell className="text-xs sm:text-sm">900 × 2100</TableCell>
+                        </TableRow>
+                        <TableRow>
+                          <TableCell className="text-xs sm:text-sm">1000 kg</TableCell>
+                          <TableCell className="text-xs sm:text-sm">1500 × 1500</TableCell>
+                          <TableCell className="text-xs sm:text-sm">900 × 2100</TableCell>
+                        </TableRow>
+                        <TableRow>
+                          <TableCell className="text-xs sm:text-sm">1600 kg</TableCell>
+                          <TableCell className="text-xs sm:text-sm">1600 × 1600</TableCell>
+                          <TableCell className="text-xs sm:text-sm">1000 × 2100</TableCell>
+                        </TableRow>
+                      </TableBody>
+                    </Table>
+                  </div>
+                </div>
+              </div>
+            </CardContent>
+          </Card>
+        </section>
+
+        {/* Goods Lifts */}
+        <section id="goods" className="mb-16">
+          <Card className="overflow-hidden">
+            <CardHeader className="bg-gradient-steel text-steel-dark">
+              <div className="flex items-center space-x-3">
+                <Truck className="h-8 w-8" />
+                <div>
+                  <CardTitle className="text-2xl">Goods Lifts</CardTitle>
+                  <CardDescription className="text-steel-dark/80">
+                    Heavy-Duty Lifting Solutions for Industrial & Commercial Use
+                  </CardDescription>
+                </div>
+              </div>
+            </CardHeader>
+            <CardContent className="p-6">
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                <div>
+                  <img
+                    src={goodsLiftImg}
+                    alt="Goods Lift"
+                    className="w-full h-64 object-cover rounded-xl shadow-lg mb-6"
+                  />
+                  <h3 className="text-xl font-semibold mb-4">Key Features</h3>
+                  <ul className="space-y-2 text-muted-foreground">
+                    <li>• Capacity Range: 500 kg – 5000 kg</li>
+                    <li>• Designed for industrial, commercial & warehouse operations</li>
+                    <li>• Strong MS/steel structure for durability</li>
+                    <li>• Smooth and stable lifting performance</li>
+                    <li>• Low maintenance hydraulic or traction system options</li>
+                    <li>• Simple, sturdy, and long-lasting design</li>
+                    <li>• Suitable for factories, storage units, hotels, malls & hospitals</li>
+                    <li>• Automatic & manual doors available</li>
+                    <li>• Rugged cabin flooring for heavy loads</li>
+                    <li>• Highly safe & reliable for continuous operations</li>
+                  </ul>
+
+                  <h3 className="text-xl font-semibold mt-6 mb-3">Advantages</h3>
+                  <ul className="space-y-2 text-muted-foreground">
+                    <li>✔ Perfect for heavy material handling</li>
+                    <li>✔ Cost-effective for industrial use</li>
+                    <li>✔ Built for tough, long-lasting performance</li>
+                    <li>✔ Customizable doors, controls & cabin size</li>
+                  </ul>
+                </div>
+
+                <div>
+                  <h3 className="text-xl font-semibold mb-4">Typical Capacity & Dimensions</h3>
+                  <div className="overflow-x-auto">
+                    <Table>
+                      <TableHeader>
+                        <TableRow>
+                          <TableHead className="min-w-[120px]">Capacity (kg)</TableHead>
+                          <TableHead className="min-w-[140px]">Car Size (mm)</TableHead>
+                          <TableHead className="min-w-[140px]">Entrance (mm)</TableHead>
+                        </TableRow>
+                      </TableHeader>
+                      <TableBody>
+                        <TableRow>
+                          <TableCell className="text-xs sm:text-sm">500 kg</TableCell>
+                          <TableCell className="text-xs sm:text-sm">1100 × 1400</TableCell>
+                          <TableCell className="text-xs sm:text-sm">900 × 2000</TableCell>
+                        </TableRow>
+                        <TableRow>
+                          <TableCell className="text-xs sm:text-sm">1000 kg</TableCell>
+                          <TableCell className="text-xs sm:text-sm">1500 × 1500</TableCell>
+                          <TableCell className="text-xs sm:text-sm">1200 × 2100</TableCell>
+                        </TableRow>
+                        <TableRow>
+                          <TableCell className="text-xs sm:text-sm">2000 kg</TableCell>
+                          <TableCell className="text-xs sm:text-sm">1800 × 2000</TableCell>
+                          <TableCell className="text-xs sm:text-sm">1500 × 2100</TableCell>
+                        </TableRow>
+                        <TableRow>
+                          <TableCell className="text-xs sm:text-sm">3000 kg</TableCell>
+                          <TableCell className="text-xs sm:text-sm">2000 × 2500</TableCell>
+                          <TableCell className="text-xs sm:text-sm">1800 × 2100</TableCell>
+                        </TableRow>
+                        <TableRow>
+                          <TableCell className="text-xs sm:text-sm">5000 kg</TableCell>
+                          <TableCell className="text-xs sm:text-sm">2500 × 3000</TableCell>
+                          <TableCell className="text-xs sm:text-sm">2000 × 2200</TableCell>
+                        </TableRow>
+                      </TableBody>
+                    </Table>
                   </div>
                 </div>
               </div>

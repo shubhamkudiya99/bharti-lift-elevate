@@ -4,6 +4,9 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { ArrowRight, Building, Hospital, Truck, Users, Shield, Wrench, Award } from "lucide-react";
 import { Link } from "react-router-dom";
 import heroImage from "@/assets/hero-elevator.jpg";
+import hospitalProjectImg from "@/assets/hospital2.jpeg";
+import residentProjectImg from "@/assets/residential.jpeg";
+import commercialProjectImg from "@/assets/commercial.jpeg";
 
 const productShortcuts = [
   {
@@ -54,17 +57,17 @@ const projectSpotlight = [
   {
     title: "Hospital Lift, Bhatinda (P.)",
     description: "High-capacity hospital elevator with stretcher accommodation",
-    image: "/api/placeholder/400/250",
+    image: hospitalProjectImg,
   },
   {
     title: "Krishna Nagar, East Delhi",
     description: "Residential complex passenger lift installation",
-    image: "/api/placeholder/400/250",
+    image: residentProjectImg,
   },
   {
     title: "Sec. 23, Sanjay Nagar (GZB.)",
     description: "Commercial building elevator solutions",
-    image: "/api/placeholder/400/250",
+    image: commercialProjectImg,
   },
 ];
 
@@ -171,7 +174,7 @@ const Home = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {projectSpotlight.map((project, index) => (
               <Card key={index} className="overflow-hidden hover:shadow-card transition-all duration-300">
-                <div className="aspect-video bg-steel-light"></div>
+                <img src={project.image} alt={project.title} className="w-full h-48 object-cover rounded-t-lg" />
                 <CardHeader>
                   <CardTitle className="text-lg">{project.title}</CardTitle>
                   <CardDescription>{project.description}</CardDescription>
