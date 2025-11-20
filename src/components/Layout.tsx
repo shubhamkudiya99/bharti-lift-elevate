@@ -177,6 +177,9 @@ export const Layout = ({ children }: LayoutProps) => {
               <h3 className="font-semibold text-foreground mb-4">Delhi Office</h3>
               <div className="space-y-2 text-sm text-muted-foreground">
                 <p>PAN India, Plot No. 50, Khasra No. 44/11, Nangloi, Village Safipur Ranhola, Nathan Vihar, New Delhi 110041</p>
+                <PhoneButton number="+919667007059" className="block hover:text-primary transition-colors">
+                  +91 9667007059
+                </PhoneButton><br />
                 <PhoneButton number="+918076390964" className="block hover:text-primary transition-colors">
                   +91 8076390964
                 </PhoneButton>

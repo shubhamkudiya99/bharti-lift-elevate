@@ -179,6 +179,12 @@ const About = () => {
                   PAN India, Plot No. 50, Khasra No. 44/11, Nangloi, Village Safipur Ranhola, Nathan Vihar, New Delhi 110041
                 </p>
                 <PhoneButton 
+                  number="+919667007059"
+                  className="flex items-center space-x-2 text-primary hover:text-primary-hover transition-colors"
+                >
+                  +91 9667007059
+                </PhoneButton>
+                <PhoneButton 
                   number="+918076390964"
                   className="flex items-center space-x-2 text-primary hover:text-primary-hover transition-colors"
                 >

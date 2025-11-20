@@ -199,6 +199,12 @@ const Contact = () => {
                 </p>
                 <div className="space-y-2">
                   <PhoneButton 
+                    number="+919667007059"
+                    className="flex items-center space-x-2 text-primary hover:text-primary-hover transition-colors"
+                  >
+                    +91 9667007059
+                  </PhoneButton>
+                  <PhoneButton 
                     number="+918076390964"
                     className="flex items-center space-x-2 text-primary hover:text-primary-hover transition-colors"
                   >
